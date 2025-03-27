@@ -1,0 +1,97 @@
+.client__container {
+  position: relative;
+  isolation: isolate;
+}
+
+.client__container > img {
+  position: absolute;
+  left: 75%;
+  top: 0;
+  transform: translate(-65%, -35%) rotate(-45deg);
+  height: 12rem;
+  width: unset;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.client__card {
+  position: relative;
+  isolation: isolate;
+  margin-top: 4rem;
+}
+
+.client__card img {
+  max-width: 400px;
+  border-radius: 4rem;
+  box-shadow: 30px -30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.clent__content {
+  padding: 2rem;
+  background-color: var(--white);
+  border-left: 5px solid var(--primary-color);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5rem);
+}
+
+.clent__content h4 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.clent__content h5 {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.clent__content p {
+  color: var(--text-light);
+}
+
+.client__btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.client__btns .btn {
+  padding: 10px 12px;
+  background-color: var(--white);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 100%;
+  transition: 0.3s;
+}
+
+.client__btns .btn:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.client__btns .btn.dis {
+  pointer-events: none;
+}
+
+@media (width > 540px) {
+  .clent__content {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-left: 2rem;
+    width: 75%;
+  }
+}
+
+@media (width > 768px) {
+  .client__btns {
+    position: absolute;
+    top: 15rem;
+    right: 1rem;
+    margin-top: 0;
+  }
+}

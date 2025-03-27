@@ -1,0 +1,136 @@
+.header__container {
+  display: grid;
+  gap: 2rem;
+  overflow: hidden;
+}
+
+.header__container h1 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.header__container h1 span {
+  text-decoration: underline;
+  text-decoration-color: var(--primary-color);
+}
+
+.header__content P {
+  text-align: center;
+}
+
+.header__content form {
+  margin-top: 4rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header__content .input__group {
+  flex: 1 0 125px;
+  display: grid;
+  gap: 10px;
+}
+
+.header__content label {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--text-dark);
+}
+
+.header__content input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  background-color: transparent;
+  color: var(--text-light);
+}
+
+.header__content input::placeholder {
+  color: var(--text-light);
+}
+
+.header__content .btn {
+  padding: 13px 15px;
+  font-size: 1.75rem;
+  border-radius: 1rem;
+}
+
+.header__image {
+  display: grid;
+  isolation: isolate;
+  position: relative;
+  gap: 1rem;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 90px;
+}
+
+.header__image img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.header__image img:nth-child(1) {
+  grid-area: 1/1/4/3;
+}
+
+.header__image img:nth-child(2) {
+  grid-area: 4/1/7/3;
+}
+
+.header__image img:nth-child(3) {
+  grid-area: 2/3/6/6;
+}
+
+.header__image img:nth-child(4) {
+  position: absolute;
+  top: -2rem;
+  right: 5rem;
+  height: 10rem;
+  width: unset;
+  object-fit: contain;
+  aspect-ratio: 1;
+  box-shadow: none;
+}
+
+@media (width > 768px) {
+  .header__container {
+    padding-top: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    isolation: isolate;
+  }
+
+  .header__content {
+    position: relative;
+    padding-bottom: 10rem;
+  }
+
+  .header__content :is(h1, p) {
+    text-align: left;
+  }
+
+  .header__container h1 {
+    font-size: 4rem;
+  }
+  .header__content form {
+    position: absolute;
+    width: max-content;
+    padding: 1.5rem;
+    margin: 0;
+    bottom: 0;
+    border-radius: 1.5rem;
+    backdrop-filter: blur(5px);
+    z-index: 10;
+  }
+}

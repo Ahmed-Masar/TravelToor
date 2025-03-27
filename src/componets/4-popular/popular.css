@@ -1,0 +1,31 @@
+.popular__container {
+  position: relative;
+  isolation: isolate;
+  padding-bottom: 1rem;
+}
+
+.popular__bg {
+  position: absolute;
+  left: 75%;
+  top: 0;
+  transform: translate(-65%, -50%) rotate(-130deg);
+  height: 12rem;
+  width: unset;
+  object-fit: contain;
+}
+
+.swiper {
+  padding-block: 4rem !important;
+  width: 100% !important;
+}
+
+.swiper-slide {
+  min-width: 375px !important;
+  max-height: 536px !important;
+}
+
+@media (width < 476px) {
+  .popular__container {
+    display: none;
+  }
+}
