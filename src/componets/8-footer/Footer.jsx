@@ -67,12 +67,12 @@ const Footer = () => {
           <h4>Instagram</h4>
 
           <div className="footer__col__flex">
-            <img src="../../../public/assets/instagram-1.jpg" alt="Instagram" />
-            <img src="../../../public/assets/instagram-2.jpg" alt="Instagram" />
-            <img src="../../../public/assets/instagram-3.jpg" alt="Instagram" />
-            <img src="../../../public/assets/instagram-4.jpg" alt="Instagram" />
-            <img src="../../../public/assets/instagram-5.jpg" alt="Instagram" />
-            <img src="../../../public/assets/instagram-6.jpg" alt="Instagram" />
+            <img src="./assets/instagram-1.jpg" alt="Instagram" />
+            <img src="./assets/instagram-2.jpg" alt="Instagram" />
+            <img src="./assets/instagram-3.jpg" alt="Instagram" />
+            <img src="./assets/instagram-4.jpg" alt="Instagram" />
+            <img src="./assets/instagram-5.jpg" alt="Instagram" />
+            <img src="./assets/instagram-6.jpg" alt="Instagram" />
           </div>
         </div>
 
